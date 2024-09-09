@@ -13,10 +13,27 @@ main {
     height: auto;
 }
 
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the entire scrollbar */
+}
+
+/* Scrollbar Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #BBD6B5; /* Color of the scroll thumb */
+    border-radius: 10px; /* Rounded edges for a smooth look */
+    border: 2px solid white; /* Optional: Add a border around the thumb */
+}
+
+/* Scrollbar Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+
 /* Navbar-------------------------------------- */
 
 .navbar {
-
+    background-color: rgba(255, 255, 255, 0.95);
     position: fixed;
     top: 0;
     width: 100%;
@@ -158,4 +175,36 @@ span {
     background-size: auto 540px;
     margin-left: 40px;
     border-radius: 50px;
+}
+
+
+/* Second main heading-------------------------------------- */
+
+.big-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.big-text {
+    font-size: 80px;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.avacado {
+    position: absolute;
+    margin: -520px -500px 0 0;
+    width: 100px;
+
+}
+
+.watermelon {
+    width: 110px;
+    margin: 30px 500px 0 0;
+    position: absolute;
 }
